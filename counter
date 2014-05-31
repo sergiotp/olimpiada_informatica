@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require_relative 'counter'
+
+file_path = ARGV.first
+file_reader = FileReader.new file_path
+counter = Counter.new file_reader
+puts counter.total_students
