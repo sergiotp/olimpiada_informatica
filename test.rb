@@ -1,7 +1,7 @@
 require_relative 'counter'
 require 'minitest/autorun'
 
-class TestValidator < Minitest::Test
+class TestValidator < Minitest::Unit::TestCase
   def setup
     @validator = Validator.new
   end
@@ -31,7 +31,7 @@ class TestValidator < Minitest::Test
   end
 end
 
-class TestCounter < Minitest::Test
+class TestCounter < Minitest::Unit::TestCase
 
   def test_correct_calculation
     path = '/tmp/teste'
